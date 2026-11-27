@@ -1,0 +1,2 @@
+// Общие элементы интерфейса: тема, счётчик корзины и карточки главной страницы.
+document.addEventListener("DOMContentLoaded",()=>{const savedTheme=localStorage.getItem("techshop-theme");if(savedTheme==="dark")document.body.classList.add("dark");document.querySelectorAll(".theme-toggle").forEach(button=>button.addEventListener("click",()=>{document.body.classList.toggle("dark");localStorage.setItem("techshop-theme",document.body.classList.contains("dark")?"dark":"light");}));if(typeof updateCartCount==="function")updateCartCount();});
